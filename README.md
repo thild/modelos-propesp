@@ -1,4 +1,4 @@
-Modelo de projeto de de pesquisa (PqI/PqE) e Relatório Técnico Final, segundo as normas da PROPESP/UNICENTRO.
+Modelo de Projeto de Pesquisa (PqI/PqE) e Relatório Técnico Final (RTF), segundo as normas da PROPESP/UNICENTRO.
 
 Formulário PqI e PqE: Anexos V e VI da Resolução nº 59-CEPE/UNICENTRO, de 16 de setembro de 2011
 https://www2.unicentro.br/pesquisa/files/2012/10/form-pqi.doc?x75905
