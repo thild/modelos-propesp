@@ -1,0 +1,58 @@
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{multicol}
+\usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{lipsum}				    % para geração de dummy text
+\usepackage{natbib}		            % bibliografia no estilo NatBib
+\usepackage[shortlabels]{enumitem}  % http://ctan.org/pkg/enumitem
+\renewcommand{\cite}{\citep}	    % \cite deve funcionar como \citep
+
+\newcommand*\justify{%
+  \hyphenchar\font=`\_% allowing hyphenation
+}
+
+\usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}  % for vertical centering text in X column
+\DisemulatePackage{setspace}
+\usepackage{setspace}
+\usepackage{booktabs}
+
+%remover
+\usepackage{fontawesome}
+\usepackage{soulutf8}
+
+\newcommand{\hli}[1]{%
+  \begingroup
+  \sethlcolor{yellow}%
+  \hl{#1}%
+  \endgroup
+}
+
+\newcommand{\code}[1]{\texttt{\justify#1}}
+
+\usepackage{xifthen}    % provides \isempty test
+
+\newcommand{\warning}[1]{%
+  \ifthenelse{\isempty{#1}}%
+    {\hl{\faWarning}}% if #1 is empty
+    {\hl{\faWarning~#1}}% if #1 is empty
+}
+
+\newcommand{\ok}[1]{%
+  \begingroup
+    \sethlcolor{green}
+    \ifthenelse{\isempty{#1}}%
+        {\hl{\checkmark}}% if #1 is empty
+        {\hl{\checkmark~#1}}% if #1 is empty
+  \endgroup
+}
