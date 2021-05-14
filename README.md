@@ -8,7 +8,7 @@ https://www2.unicentro.br/pesquisa/files/2012/10/modelo-relatorio-final.doc?x759
 
 Para projeto, altere os parâmetros em \documentclass no arquivo main.tex para \documentclass[english,brazilian,pqi,tide,projeto]{propesp}
 
-Para relatório altere os parâmetros em \documentclass no arquivo main.tex para \documentclass[english,brazilian,pqi,tide,relatório]{propesp}
+Para relatório, altere os parâmetros em \documentclass no arquivo main.tex para \documentclass[english,brazilian,pqi,tide,relatorio]{propesp}
 
 Em \documentclass também deve-se indicar se o projeto é pqi, pqe e/ou tide.
 
