@@ -22,18 +22,36 @@
 \subarea{1.03.03.00-6 - Metodologia e Técnicas da Computação}
 \cidade{Guarapuava}
 
+% # knitr::opts_knit$set(base.dir = './')
+% # set all subsequent chunks' working dir as the project root dir
+% opts_knit$set(root.dir = "/output")
+% # set this first setup chunk working dir to project root dir (since the previous line does not affect the chunk it's run in)
+% #setwd(rprojroot::find_rstudio_root_file())
+% # Check current working dir
+% getwd() # CORRECTLY OUTPUTS R.PROJECT ROOT DIR
+% # Set all chunks to output plots to the dir "figures/"
+% opts_chunk$set(fig.path = "figures/") # This should output all chunk plots to "project-root/figures/"
+
+
 % Início do documento
 \begin{document}
+
+<<setup, include=FALSE, echo=FALSE>>=
+library(knitr)
+source("setup.R")
+setup()
+@
+
 \ifprojeto
     \anexov
     \anexovi
-    \input{projeto/02_palavras_chave}
-    \input{projeto/03_caracterizacao_justificativa}
-    \input{projeto/04_objetivos}
-    \input{projeto/05_metodologia_estrategia_acao}
-    \input{projeto/06_formas_disseminacao}
+    \import{projeto}{02_palavras_chave}
+    \import{projeto}{03_caracterizacao_justificativa}
+    \import{projeto}{04_objetivos}
+    \import{projeto}{05_metodologia_estrategia_acao}
+    \import{projeto}{06_formas_disseminacao}
     \bibliography{referencias}
-    \input{projeto/08_cronograma_atividades}
+    \import{projeto}{08_cronograma_atividades}
 \else
     \ifrelatorio
         \renewcommand{\thechapter}{\Roman{chapter}}

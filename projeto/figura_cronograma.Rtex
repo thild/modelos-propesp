@@ -1,4 +1,0 @@
-<<cronograma_projeto, fig.path="projeto/figure/", fig.pos="ht", fig.width = 10, fig.height = 5, out.width = "\\textwidth", fig.cap="Cronograma de atividades", echo=FALSE, cache=FALSE, message=FALSE>>=
-source("cronograma.R")
-cronogramaplot
-@

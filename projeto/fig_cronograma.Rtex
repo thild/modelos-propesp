@@ -1,0 +1,9 @@
+<<setup, include=FALSE, echo=FALSE>>=
+source("../setup.R")
+setup()
+@
+
+<<cronograma_projeto, fig.pos="ht", fig.width = 10, fig.height = 5, out.width = "\\textwidth", fig.cap="Cronograma de atividades">>=
+source("projeto/fig_cronograma.R")
+plot
+@
