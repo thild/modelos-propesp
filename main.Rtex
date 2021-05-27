@@ -36,7 +36,7 @@
 % Início do documento
 \begin{document}
 
-<<setup, include=FALSE, echo=FALSE>>=
+<<setup, include=FALSE, echo=TRUE>>=
 library(knitr)
 source("setup.R")
 setup()

@@ -271,7 +271,9 @@ ganttrify <- function(project,
   
   
   gg_gantt <- suppressWarnings(gg_gantt 
-                               + ggplot2::scale_y_discrete(name="Metas e/ou atividades")
+                            #   + ggplot2::scale_y_discrete(name="Metas e/ou atividades", labels = function(x) gsub(" ", "\n", x))
+                            #   + ggplot2::scale_y_discrete(name="Metas e/ou atividades", labels=labels.wrap)
+                               + ggplot2::scale_y_discrete(name="Metas e/ou atividades")                               
                                + ggplot2::scale_color_discrete(name = "Grupos")
                                #+ ggplot2::ylab("Working intensity")
                                + ggplot2::theme_minimal()
